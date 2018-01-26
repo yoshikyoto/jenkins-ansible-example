@@ -1,0 +1,14 @@
+- name: install epel-release
+  yum: name=epel-release state=installed
+
+- name: install git
+  yum: name=git state=latest
+
+- name: instal openssl
+  yum: name=openssl state=latest
+
+- name: install selinux-python
+  yum: name=libselinux-python state=latest
+
+- name: disable selinux
+  selinux: state=disabled
