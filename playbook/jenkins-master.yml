@@ -1,0 +1,7 @@
+- name: jenkinsサーバーを構築する
+  hosts: jenkins-master
+  become: yes
+  roles:
+    - common
+    - java8
+    - jenkins
