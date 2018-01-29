@@ -1,0 +1,6 @@
+- name: jenkins slave を構築する
+  hosts: jenkins-slave
+  become: yes
+  roles:
+    - common
+    - java
