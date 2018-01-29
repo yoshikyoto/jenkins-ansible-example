@@ -13,3 +13,6 @@
 # サービスをstart
 - name: enable jenkins
   service: name=jenkins state=started enabled=yes
+
+- name: jenkinsユーザーのシェルをbashに変更
+  user: name=jenkins state=present shell=/bin/bash
