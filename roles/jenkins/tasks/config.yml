@@ -12,3 +12,11 @@
     owner: jenkins
     group: jenkins
     mode: 0755
+
+- name: jenkinsのsshkeyようディレクトリ作成
+  file:
+    path: /var/lib/jenkins/.ssh
+    state: directory
+    owner: jenkins
+    group: jenkins
+    mode: 0700
