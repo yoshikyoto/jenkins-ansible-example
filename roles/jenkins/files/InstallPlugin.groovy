@@ -1,7 +1,7 @@
 import jenkins.model.*
 
 def instance  = Jenkins.getInstance()
-def plugins   = ["git", "ssh-slaves", "workflow-aggregator"]
+def plugins   = ["git", "ssh-slaves", "workflow-aggregator", "github-pullrequest"]
 
 pluginManager = instance.getPluginManager()
 updateCenter = instance.getUpdateCenter()
