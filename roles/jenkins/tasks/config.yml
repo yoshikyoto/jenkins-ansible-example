@@ -20,3 +20,6 @@
     owner: jenkins
     group: jenkins
     mode: 0700
+
+- name: jenkinsをrestartして設定を反映
+  service: name=jenkins state=restarted
