@@ -1,0 +1,14 @@
+- name: create init script directory
+  file:
+    path: /var/lib/jenkins/init.groovy.d
+    state: directory
+    owner: jenkins
+    group: jenkins
+
+- name: deploy InstallPlugin.groovy
+  copy:
+    src: InstallPlugin.groovy
+    dest: /var/lib/jenkins/init.groovy.d/InstallPlugin.groovy
+    owner: jenkins
+    group: jenkins
+    mode: 0755
